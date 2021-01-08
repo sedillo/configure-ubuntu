@@ -5,12 +5,20 @@
 #        exit 1
 #fi
 
+#Set Caps Lock as CTRL
+#https://askubuntu.com/a/462498
+#TODO check if this can be done with: https://askubuntu.com/a/418773
+sudo apt-get install gnome-tweak-tool
+
 #Build xcape
-https://github.com/alols/xcape
-sudo apt-get install git gcc make pkg-config libx11-dev libxtst-dev libxi-dev
-git clone https://github.com/alols/xcape.git
-cd xcape
-make
-sudo make install
+#TODO this can be done with git apt install xcape (I think)
+#https://github.com/alols/xcape
+#sudo apt-get install git gcc make pkg-config libx11-dev libxtst-dev libxi-dev
+#git clone https://github.com/alols/xcape.git
+#cd xcape
+#make
+#sudo make install
 xcape  -e 'Caps_Lock=Control_L|Escape'
+
+
 
