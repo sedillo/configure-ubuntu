@@ -5,6 +5,10 @@
 #        exit 1
 #fi
 
+#Maybe the best option?? 
+#https://unix.stackexchange.com/a/250020
+setxkbmap -option ctrl:nocaps
+
 #This actually swaps CTRL and CAPS LOCK
 #TODO check if this can be done with: https://askubuntu.com/a/418773
 
@@ -20,6 +24,7 @@ sudo apt-get install gnome-tweak-tool
 #cd xcape
 #make
 #sudo make install
+sudo apt install xcape
 xcape  -e 'Caps_Lock=Control_L|Escape'
 
 
