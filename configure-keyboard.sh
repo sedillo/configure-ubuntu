@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#New strategy to try:
+#https://ansonvandoren.com/posts/ubuntu-capslock-swap/
+
 #if [ "$(id -u)" -eq 0 ]; then
 #        echo 'This script cannot be run by root' >&2
 #        exit 1
