@@ -5,9 +5,11 @@
 #        exit 1
 #fi
 
-#Set Caps Lock as CTRL
-#https://askubuntu.com/a/462498
+#This actually swaps CTRL and CAPS LOCK
 #TODO check if this can be done with: https://askubuntu.com/a/418773
+
+#This method disables caps lock
+#https://askubuntu.com/a/462498
 sudo apt-get install gnome-tweak-tool
 
 #Build xcape
