@@ -1,34 +1,14 @@
 #!/bin/bash
+#For my set-up I'll assume that most key switches are done at 
+#the firmware level of the keyboard including
+# - Dvorak
+# - CapsLock to Left_Control
 
-#New strategy to try:
-#https://ansonvandoren.com/posts/ubuntu-capslock-swap/
-
-#if [ "$(id -u)" -eq 0 ]; then
-#        echo 'This script cannot be run by root' >&2
-#        exit 1
-#fi
-
-#Maybe the best option?? 
-#https://unix.stackexchange.com/a/250020
-setxkbmap -option ctrl:nocaps
-
-#This actually swaps CTRL and CAPS LOCK
-#TODO check if this can be done with: https://askubuntu.com/a/418773
-
-#This method disables caps lock
-#https://askubuntu.com/a/462498
-sudo apt-get install gnome-tweak-tool
-
-#Build xcape
-#TODO this can be done with git apt install xcape (I think)
-#https://github.com/alols/xcape
-#sudo apt-get install git gcc make pkg-config libx11-dev libxtst-dev libxi-dev
-#git clone https://github.com/alols/xcape.git
-#cd xcape
-#make
-#sudo make install
-sudo apt install xcape
-xcape  -e 'Caps_Lock=Control_L|Escape'
-
-
+if [ "$(id -u)" -ne 0 ]; then
+        echo 'Run this as root' >&2
+        exit 1
+fi
+apt install xcape
+xcape -e 'Control_L=Escape'
+echo "xcape -e 'Control_L=Escape'" >> /etc/bash.bashrc
 
