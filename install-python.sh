@@ -9,6 +9,7 @@ if [ "$(id -u)" -ne 0 ]; then
         exit 1
 fi
 
+#Install Python pip numpy
 apt update -y
 apt install -y software-properties-common
 add-apt-repository -y ppa:deadsnakes/ppa
@@ -18,3 +19,5 @@ apt install python3-pip
 pip3 install --upgrade pip
 pip3 install numpy
 
+#Install editor
+snap install --classic code
