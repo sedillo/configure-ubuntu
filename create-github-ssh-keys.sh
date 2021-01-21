@@ -9,3 +9,7 @@ echo "Add to github settings"
 echo ""
 echo "Test with:"
 echo "ssh -T git@github.com"
+
+git config --global user.email "${1}"
+git config --global user.name "Mike Sedillo"
+
