@@ -5,14 +5,14 @@
 #https://phoenixnap.com/kb/introduction-to-python-pandas
 
 #Install Python pip numpy
-apt update -y
-apt install -y software-properties-common
-add-apt-repository -y ppa:deadsnakes/ppa
-apt update -y
-apt install -y python3.8
-apt install -y python3-pip
+sudo apt update -y
+sudo apt install -y software-properties-common
+sudo add-apt-repository -y ppa:deadsnakes/ppa
+sudo apt update -y
+sudo apt install -y python3.8
+sudo apt install -y python3-pip
 pip3 install --upgrade pip
 pip3 install numpy
 
 #Install editor
-snap install --classic code
+sudo snap install --classic code

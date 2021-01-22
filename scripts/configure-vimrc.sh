@@ -3,6 +3,7 @@
 #the firmware level of the keyboard including
 
 #Global location
-cp ./vimrc /etc/vimrc
-cp ./vimrc /etc/vim/vimrc
+sudo apt-get install -y vim
+sudo cp ./vimrc /etc/vimrc
+sudo cp ./vimrc /etc/vim/vimrc
 
