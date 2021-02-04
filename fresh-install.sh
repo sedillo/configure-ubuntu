@@ -1,10 +1,12 @@
 #!/bin/bash
 
-./scripts/install-libraries.sh
-./scripts/configure-keyboard.sh
-./scripts/configure-vimrc.sh
-./scripts/install-mega.sh
-./scripts/install-python.sh
-./scripts/configure-screen-saver.sh
-./scripts/install-docker.sh
-./scripts/install-chrome.sh
+CWDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null && pwd )"
+
+${CWDIR}/scripts/install-libraries.sh
+${CWDIR}/scripts/configure-keyboard.sh
+${CWDIR}/scripts/configure-vimrc.sh
+${CWDIR}/scripts/install-mega.sh
+${CWDIR}/scripts/install-python.sh
+${CWDIR}/scripts/configure-screen-saver.sh
+${CWDIR}/scripts/install-docker.sh
+${CWDIR}/scripts/install-chrome.sh
