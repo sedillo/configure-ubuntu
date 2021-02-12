@@ -4,7 +4,7 @@
 # - Dvorak
 # - CapsLock to Left_Control
 
-sudo apt install xcape
+sudo apt install -y xcape
 xcape -e 'Control_L=Escape'
 #sudo bash -c "echo \"xcape -e 'Control_L=Escape'\" >> /etc/bash.bashrc"
 echo "xcape -e 'Control_L=Escape'" >> ~/.bashrc
