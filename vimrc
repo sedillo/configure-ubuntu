@@ -4,3 +4,8 @@ set paste
 set tabstop=4
 " tab inserts 4 spaces
 set expandtab
+
+" no more terrible color scheme
+syntax off
+set nohlsearch
+set t_Co=0
