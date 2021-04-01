@@ -1,6 +1,5 @@
 #!/bin/bash
 # Add these server snaps
-# docker, awscli, google-cloud-sdk, doctl
 
 CWDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null && pwd )"
 
