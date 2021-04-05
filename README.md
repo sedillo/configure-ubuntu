@@ -1,9 +1,16 @@
 # configure-ubuntu
 
+## Installation for ubuntu server host
 ```bash
-sudo su - 
-cd /opt
-apt-get update && apt-get install -y git
-git clone https://github.com/sedillo/configure-ubuntu.git
+git -C ~ clone git@github.com:sedillo/configure-ubuntu.git
+cd ~/configure-ubuntu/
+
+#Install Docker
+./scripts/install-docker.sh
+su ${USER}
+
+#Install 
+./scripts/install-libraries.sh
+./scripts/configure-vimrc.sh
 ```
 
