@@ -7,4 +7,5 @@ sudo apt-get install -y vim
 #sudo cp ./vimrc /etc/vimrc
 #sudo cp ./vimrc /etc/vim/vimrc
 cp ./vimrc ~/.vimrc
+sudo cp ./vimrc /root/.vimrc
 
