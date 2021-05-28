@@ -4,13 +4,9 @@
 ```bash
 git -C ~ clone git@github.com:sedillo/configure-ubuntu.git
 cd ~/configure-ubuntu/
+./fresh-server
 
-#Install Docker
-./scripts/install-docker.sh
+# Apply changes to current user
 su ${USER}
-
-#Install 
-./scripts/install-libraries.sh
-./scripts/configure-vimrc.sh
 ```
 
